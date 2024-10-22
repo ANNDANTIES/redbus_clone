@@ -1,0 +1,157 @@
+.pointer{
+    cursor: pointer;
+}
+.redbus-logo{
+    height:70px;
+    width:120px;
+}
+.vertical-line{
+ margin-top:30px;   
+height:30px;
+border-left: 1px solid rgb(180, 193, 180);
+}
+.busbook{
+    background-color: rgb(203, 78, 78);
+    left:30px;
+    width:200px;
+    height:120px;
+    border-radius: 20px;
+}
+.logo{ 
+    height:60px;
+    width:80px;
+    left:40px;
+    top:25px;
+    border-radius: 5px;
+}
+.logo-overlap{
+    padding: 30px;
+    margin-top:50px;
+    font-weight: 600;
+    font-size:larger;
+}
+.train-railimg{
+    filter:grayscale(100%);
+    width: 60px;
+    margin-left: 40px;
+    margin-top:50px;   
+}
+.multilang-icon{
+    width:100px;
+    height: 100px;
+}
+.train-ticket{
+    font-size: larger;
+    font-style: bold;
+    width:200px;
+    height:120px;
+    border-radius: 20px;
+    left: 50px;
+    background-color: white ;
+}
+.train-ticket:hover{
+    background-color: rgb(237, 236, 233) ;
+    font-size: larger;
+    font-style: bold;
+    width:200px;
+    height:120px;
+    border-radius: 20px;
+    left: 50px;
+}
+.train-ticket:hover .train-railimg{
+    filter:grayscale(0%);
+    width: 60px;
+    margin-left: 40px;
+    margin-top:50px;   
+}
+.headset{
+    width:150px;
+    height:120px;
+}
+.help{
+    position:relative;
+    background-color: white;
+    padding: 20px;
+    width: 160px;
+    height:80px;
+    border-radius: rounded;
+}
+.help:hover{
+    position:relative;
+    background-color: rgb(237, 236, 233) ;
+    padding: 20px;
+    width: 160px;
+    height:80px;
+    border-radius: 20px;
+}
+.multilang{
+    background-color:white; 
+    position:relative;
+    width: 180px;
+    height:80px;
+    border-radius: 20px;
+   
+    font-size: larger;
+}
+.butnlang{
+    border-color: rgb(248 250 252);
+}
+
+.multilang:hover{
+    background-color: rgb(237, 236, 233) ;
+    position:relative;
+    width: 180px;
+    height:80px;
+    border-radius: 20px;
+    
+}
+.multilang:hover .btnlang{
+    border-color:rgb(237, 236, 233) ;
+}
+.accnt-icon{
+    width:50px;
+    height:50px;
+}
+
+.accnt{
+    background-color:white; 
+    width: 180px;
+    height:80px;
+    border-radius: 20px;
+    font-size: larger;
+    padding: 15px;
+}
+.accnt:hover{
+    background-color: rgb(237, 236, 233) ;
+    width: 180px;
+    height:80px;
+    border-radius: 20px;
+    padding: 15px;
+}
+.search{
+  width:100%;
+   position: relative;
+}
+.bgimg{
+width: 100%;
+}
+.headsearch{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    top:40px;
+    left:20%;
+    right:20%;
+    font-style: bold;
+    font-size: 50px;
+}
+.search-result{
+    background-color: aliceblue;
+    position: absolute;
+    left:15%;
+    right:15%;
+    width: auto;
+    border-radius: 40%;
+}

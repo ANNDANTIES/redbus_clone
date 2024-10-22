@@ -5,18 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redbus</title>
+    <!-- google help font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=headset_mic" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 900,
+          'GRAD' 0,
+          'opsz' 500
+        }
+        </style>
+    <link rel="stylesheet" href="./style.css">
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- bootstarp -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- header -->
-     <div>
-        <header>
-
-        </header>
-     </div>
+       <header class="container overflow-hidden">
+            <div class="row mt-10">
+                <div class="col-6 d-flex">
+                    <img class="redbus-logo pointer" src="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.webp"
+                        alt="redbus img" />
+                    <div class="ml-20 d-flex">
+                        <div class="vertical-line"></div>
+                        <div class="busbook position-relative pointer">
+                            <img class="logo position-absolute " src="./img/logobus.png" alt="redbus img" />
+                            <p id="" class="logo-overlap text-white z-index-1">Bus Tickets</p>
+                        </div>
+                        <div class="train-ticket position-relative pointer">
+                            <div class="position-absolute text-black top-7 left-20 badge badge text-bg-success">
+                                <p class="text-white">₹ 60% off</p>
+                            </div>
+                            <img class="train-railimg img-fluid"
+                                src="https://s3.rdbuz.com/web/images/layout/rail_vertical.svg" alt="redbus img" />
+                            <p class="text-center">Train Tickets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-around mt-10">
+                    <div class="help d-flex justify-content-around pointer">
+                        <img style="width:70px;height:40px;padding:2px;" src="./img/help.png" alt=""not found">
+                        <p style="font-size: x-large;font-style:bold">Help</p>
+                        
+                    </div>
+                    <div class="multilang d-flex">
+                        <img class="multilang-icon" src="./img/multilang.png" alt="not found">
+                        <div class="position-absolute pl-20 pt-4 dropdown">
+                            <button class="butnlang dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                English
+                            </button>
+                            <ul class="dropdown-menu rounded border border-white">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">हिंदी (Hindi)</a></li>
+                                <li><a class="dropdown-item" href="#">தமிழ் (Tamil)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accnt d-flex position-relative">
+                        <img class="accnt-icon" styles="" src="./img/accnt_circle.png" alt="not found">
+                        <div class="dropdown">
+                            <button class="butnlang dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Account
+                            </button>
+                            <ul class="dropdown-menu rounded border border-white">
+                                <li><a class="dropdown-item" href="#">Cancel Ticket</a></li>
+                                <li><a class="dropdown-item" href="#">Change Travel Date</a></li>
+                                <li><a class="dropdown-item" href="#">Show My Ticket</a></li>
+                                <li><a class="dropdown-item" href="#">Email/SMS</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Login/Sign Up</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </header>
     <!-- search -->
+     <div class="search mt-6">
+        <img class="position-absolute bgimg" src="https://s3.rdbuz.com/images/webplatform/india/Homepage-header-2000.webp" alt="not found" />
+        <div class="search-result ">
+
+        </div>
+        <h2 class="headsearch fw-bolder">India's No. 1 Online Bus Ticket Booking Site</h2>
+     </div>
     <!-- offers -->
     <!-- Government Buses -->
     <!-- train booking -->
@@ -27,5 +105,9 @@
     <!-- FAQ's -->
     <!-- Footer -->
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </html>
