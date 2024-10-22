@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redbus</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google help font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=headset_mic" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=headset_mic" />
     <style>
         .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 900,
-          'GRAD' 0,
-          'opsz' 500
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 900,
+                'GRAD' 0,
+                'opsz' 500
         }
-        </style>
+    </style>
     <link rel="stylesheet" href="./style.css">
     <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,75 +31,96 @@
 
 <body>
     <!-- header -->
-       <header class="container overflow-hidden">
-            <div class="row mt-10">
-                <div class="col-6 d-flex">
-                    <img class="redbus-logo pointer" src="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.webp"
-                        alt="redbus img" />
-                    <div class="ml-20 d-flex">
-                        <div class="vertical-line"></div>
-                        <div class="busbook position-relative pointer">
-                            <img class="logo position-absolute " src="./img/logobus.png" alt="redbus img" />
-                            <p id="" class="logo-overlap text-white z-index-1">Bus Tickets</p>
-                        </div>
-                        <div class="train-ticket position-relative pointer">
-                            <div class="position-absolute text-black top-7 left-20 badge badge text-bg-success">
-                                <p class="text-white">₹ 60% off</p>
-                            </div>
-                            <img class="train-railimg img-fluid"
-                                src="https://s3.rdbuz.com/web/images/layout/rail_vertical.svg" alt="redbus img" />
-                            <p class="text-center">Train Tickets</p>
-                        </div>
+    <header class="container overflow-hidden">
+        <div class="row mt-10">
+            <div class="col-6 d-flex">
+                <img class="redbus-logo pointer" src="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.webp"
+                    alt="redbus img" />
+                <div class="ml-20 d-flex">
+                    <div class="vertical-line"></div>
+                    <div class="busbook position-relative pointer">
+                        <img class="logo position-absolute " src="./img/logobus.png" alt="redbus img" />
+                        <p id="" class="logo-overlap text-white z-index-1">Bus Tickets</p>
                     </div>
-                </div>
-                <div class="col-6 d-flex justify-content-around mt-10">
-                    <div class="help d-flex justify-content-around pointer">
-                        <img style="width:70px;height:40px;padding:2px;" src="./img/help.png" alt=""not found">
-                        <p style="font-size: x-large;font-style:bold">Help</p>
-                        
-                    </div>
-                    <div class="multilang d-flex">
-                        <img class="multilang-icon" src="./img/multilang.png" alt="not found">
-                        <div class="position-absolute pl-20 pt-4 dropdown">
-                            <button class="butnlang dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                English
-                            </button>
-                            <ul class="dropdown-menu rounded border border-white">
-                                <li><a class="dropdown-item" href="#">English</a></li>
-                                <li><a class="dropdown-item" href="#">हिंदी (Hindi)</a></li>
-                                <li><a class="dropdown-item" href="#">தமிழ் (Tamil)</a></li>
-                            </ul>
+                    <div class="train-ticket position-relative pointer">
+                        <div class="position-absolute text-black top-7 left-20 badge badge text-bg-success">
+                            <p class="text-white">₹ 60% off</p>
                         </div>
-                    </div>
-                    <div class="accnt d-flex position-relative">
-                        <img class="accnt-icon" styles="" src="./img/accnt_circle.png" alt="not found">
-                        <div class="dropdown">
-                            <button class="butnlang dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Account
-                            </button>
-                            <ul class="dropdown-menu rounded border border-white">
-                                <li><a class="dropdown-item" href="#">Cancel Ticket</a></li>
-                                <li><a class="dropdown-item" href="#">Change Travel Date</a></li>
-                                <li><a class="dropdown-item" href="#">Show My Ticket</a></li>
-                                <li><a class="dropdown-item" href="#">Email/SMS</a></li>
-                                <hr>
-                                <li><a class="dropdown-item" href="#">Login/Sign Up</a></li>
-                            </ul>
-                        </div>
+                        <img class="train-railimg img-fluid"
+                            src="https://s3.rdbuz.com/web/images/layout/rail_vertical.svg" alt="redbus img" />
+                        <p class="text-center">Train Tickets</p>
                     </div>
                 </div>
             </div>
-       </header>
-    <!-- search -->
-     <div class="search mt-6">
-        <img class="position-absolute bgimg" src="https://s3.rdbuz.com/images/webplatform/india/Homepage-header-2000.webp" alt="not found" />
-        <div class="search-result ">
+            <div class="col-6 d-flex justify-content-around mt-10">
+                <div class="help d-flex justify-content-around pointer">
+                    <img style="width:70px;height:40px;padding:2px;" src="./img/help.png" alt="" not found">
+                    <p style="font-size: x-large;font-style:bold">Help</p>
 
+                </div>
+                <div class="multilang d-flex">
+                    <img class="multilang-icon" src="./img/multilang.png" alt="not found">
+                    <div class="position-absolute pl-20 pt-4 dropdown">
+                        <button class="butnlang dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            English
+                        </button>
+                        <ul class="dropdown-menu rounded border border-white">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">हिंदी (Hindi)</a></li>
+                            <li><a class="dropdown-item" href="#">தமிழ் (Tamil)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accnt d-flex position-relative">
+                    <img class="accnt-icon" styles="" src="./img/accnt_circle.png" alt="not found">
+                    <div class="dropdown">
+                        <button class="butnlang dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Account
+                        </button>
+                        <ul class="dropdown-menu rounded border border-white">
+                            <li><a class="dropdown-item" href="#">Cancel Ticket</a></li>
+                            <li><a class="dropdown-item" href="#">Change Travel Date</a></li>
+                            <li><a class="dropdown-item" href="#">Show My Ticket</a></li>
+                            <li><a class="dropdown-item" href="#">Email/SMS</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#">Login/Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- search -->
+    <div class="search mt-6">
+        <img class="position-absolute bgimg"
+            src="https://s3.rdbuz.com/images/webplatform/india/Homepage-header-2000.webp" alt="not found" />
+        <div class="search-result">
+            <div class="boardin d-flex flex-row">
+                <img class="boardin" src="./img/boardin.png" alt="not found">
+                <div class="d-flex flex-col">
+                    <label>From</label>
+                   <b> <input type="text" placeholder="Kochi"></b>
+                </div>
+            </div>
+            <div class="boardin d-flex flex-row">
+                <img class="boardin" src="./img/boardin.png" alt="not found">
+                <div class="d-flex flex-col">
+                    <label>To</label>
+                   <b> <input type="text" placeholder="Trivandrum"></b>
+                </div>
+            </div>
+            <div class="date d-flex flex-row">
+                <i class="fa-sharp fa-solid fa-calendar-days"></i>
+                <div class="d-flex flex-col ml-3">
+                    <label for="traveldate">Date</label>
+                    <input type="date" id="traveldate" name="traveldate">
+                </div>
+            </div>
         </div>
         <h2 class="headsearch fw-bolder">India's No. 1 Online Bus Ticket Booking Site</h2>
-     </div>
+    </div>
     <!-- offers -->
     <!-- Government Buses -->
     <!-- train booking -->

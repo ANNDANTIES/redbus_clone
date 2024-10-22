@@ -148,10 +148,19 @@ width: 100%;
     font-size: 50px;
 }
 .search-result{
-    background-color: aliceblue;
+    background-color:white;
     position: absolute;
-    left:15%;
-    right:15%;
+    left:5%;
+    right:5%;
     width: auto;
-    border-radius: 40%;
+    height:150px;
+    top:300px;
+    border-radius: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.boardin{
+    width:80px;
+    height:50px;
 }
