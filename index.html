@@ -31,7 +31,7 @@
 
 <body>
     <!-- header -->
-    <header class="container overflow-hidden">
+    <header class="container overflow-hidden ">
         <div class="row mt-10">
             <div class="col-6 d-flex">
                 <img class="redbus-logo pointer" src="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.webp"
@@ -96,32 +96,80 @@
     <div class="search mt-6">
         <img class="position-absolute bgimg"
             src="https://s3.rdbuz.com/images/webplatform/india/Homepage-header-2000.webp" alt="not found" />
-        <div class="search-result">
-            <div class="boardin d-flex flex-row">
-                <img class="boardin" src="./img/boardin.png" alt="not found">
-                <div class="d-flex flex-col">
-                    <label>From</label>
-                   <b> <input type="text" placeholder="Kochi"></b>
+        <div class="search-result row justify-content-md-center">
+            <div class="boardin d-flex flex-row col-3">
+                <img class="boardin mt-4" src="./img/boardin.png" alt="not found">
+                <div class="d-flex flex-col mt-4">
+                    <label style="font-size: x-large;">From</label>
+                    <b> <input type="text" placeholder="Kochi"></b>
                 </div>
             </div>
-            <div class="boardin d-flex flex-row">
-                <img class="boardin" src="./img/boardin.png" alt="not found">
-                <div class="d-flex flex-col">
-                    <label>To</label>
-                   <b> <input type="text" placeholder="Trivandrum"></b>
+            <div class="boardin d-flex flex-row col-3">
+                <div class="vertical-line-boardin"></div>
+                <img class="boardin mt-4" src="./img/boardin.png" alt="not found">
+                <div class="d-flex flex-col mt-4">
+                    <label style="font-size: x-large;">To</label>
+                    <b> <input class="border border-white" type="text" placeholder="Trivandrum"></b>
                 </div>
             </div>
-            <div class="date d-flex flex-row">
-                <i class="fa-sharp fa-solid fa-calendar-days"></i>
+            <div class="date d-flex flex-row col-3">
+                <div class="vertical-line-boardin"></div>
+                <img class="boardin mt-4" src="./img/calender.png" alt="not found">
                 <div class="d-flex flex-col ml-3">
-                    <label for="traveldate">Date</label>
-                    <input type="date" id="traveldate" name="traveldate">
+                    <label style="font-size: x-large;" for="traveldate">Date</label>
+                    <input class="border border-white" type="date" id="traveldate" name="traveldate">
+                </div>
+            </div>
+            <div class="searchbtn bg-danger col-3 pointer">
+                <button type="button" class="btn fs-1 fw-bolder text-white ps-2">SEARCH BUSES</button>
+            </div>
+
+
+            <!-- offers -->
+            <div class="offers">
+                <div class="d-flex justify-content-between">
+                    <h3 class="fw-bolder fs-1">TRENDING OFFERS</h3>
+                    <button type="button" class="btn">View All</button>
+                </div>
+                <div class="caroselsouter text-left p-4 gx-1">
+                    <div class="grid-item" id="grid1">
+                        <img style="height:150px;width:150px;border-radius:20px;" src="https://st.redbus.in/Images/INDOFFER/Diwali2024/All/80x80.png" alt="not found">
+                        <div class="text-white ml-5">
+                            <p class="n">Bus</p>
+                            <p>Save up to Rs 350 on bus tickets.</p>
+                            <p>Valid till 15th Nov</p>
+                        </div>
+                    </div>
+                    <div class="grid-item" id="grid1">
+                        <img style="height:150px;width:150px;border-radius:20px;" src="https://st.redbus.in/Images/INDOFFER/Diwali2024/All/80x80.png" alt="not found">
+                        <div class="text-white ml-5">
+                            <p class="n">Bus</p>
+                            <p>Save up to Rs 350 on bus tickets.</p>
+                            <p>Valid till 15th Nov</p>
+                        </div>
+                    </div>
+                    <div class="grid-item" id="grid3">
+                        <img style="height:150px;width:150px;border-radius:20px;" src="https://st.redbus.in/Images/INDOFFER/Diwali2024/All/80x80.png" alt="not found">
+                        <div class="text-white ml-5">
+                            <p class="n">Bus</p>
+                            <p>Save up to Rs 350 on bus tickets.</p>
+                            <p>Valid till 15th Nov</p>
+                        </div>
+                    </div>
+                    <div class="grid-item" id="grid4">
+                        <img style="height:150px;width:150px;border-radius:20px;" src="https://st.redbus.in/Images/INDOFFER/Diwali2024/All/80x80.png" alt="not found">
+                        <div class="text-white ml-5">
+                            <p class="n">Bus</p>
+                            <p>Save up to Rs 350 on bus tickets.</p>
+                            <p>Valid till 15th Nov</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <h2 class="headsearch fw-bolder">India's No. 1 Online Bus Ticket Booking Site</h2>
     </div>
-    <!-- offers -->
+
     <!-- Government Buses -->
     <!-- train booking -->
     <!-- other access -->
